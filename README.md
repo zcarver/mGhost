@@ -35,6 +35,12 @@ Simply the user inputs binomial name of phyto-specific fungal pathogen within do
 and the herbarium specimen limit...
 
 - --lim 200
+ 
+References
+----------
+- USDA SMML: http://nt.ars-grin.gov/fungaldatabases/index.cfm
+- IndexFungorum: http://www.indexfungorum.org/
+- Susan C. Tucker Herbarium: http://data.cyberfloralouisiana.com/lsu/
 
 License
 -------
