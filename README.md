@@ -28,7 +28,7 @@ or if using Ubuntu follow: https://peak5390.wordpress.com/2012/12/08/matplotlib-
 
 Usage
 -----
-Simply the user inputs binomial name of phyto-specific fungal pathogen within double quotes...
+Simply the user inputs binomial name of phyto-specific fungal pathogen within double quotes where --lim is the max herbarium specimens...
 
 :~/Desktop/progproject$ python mycosGeoHost.py --spp "Cercospora flagellaris" --lim 200
  
