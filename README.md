@@ -9,12 +9,19 @@ Possible implications of this project include development of meta-information (e
 Installation
 ------------
 The following Python(3) modules are utilized in script:
--Basemap
--Matplotlib
--Numpy
+
+- Basemap
+
+- Matplotlib
+
+- Numpy
+
 Two dependencies required for the current version of matplotlib/Basemap are:
--cssselect: https://pythonhosted.org/cssselect/
--cycler 0.10.0: https://pypi.python.org/pypi/Cycler
+
+- cssselect: https://pythonhosted.org/cssselect/
+
+- cycler 0.10.0: https://pypi.python.org/pypi/Cycler
+
 For the complete installation protocol of matplotlib follow: http://matplotlib.org/users/installing.html
 and of Basemap: http://matplotlib.org/basemap/users/installing.html
 or if using Ubuntu follow: https://peak5390.wordpress.com/2012/12/08/matplotlib-basemap-tutorial-installing-matplotlib-and-basemap/
@@ -22,9 +29,12 @@ or if using Ubuntu follow: https://peak5390.wordpress.com/2012/12/08/matplotlib-
 Usage
 -----
 Simply the user inputs binomial name of phyto-specific fungal pathogen within double quotes...
---spp "Cercospora flagellaris"
+
+- --spp "Cercospora flagellaris"
+
 and the herbarium specimen limit...
---lim 200
+
+- --lim 200
 
 License
 -------
