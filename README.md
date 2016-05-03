@@ -30,11 +30,7 @@ Usage
 -----
 Simply the user inputs binomial name of phyto-specific fungal pathogen within double quotes...
 
-- --spp "Cercospora flagellaris"
-
-and the herbarium specimen limit...
-
-- --lim 200
+:~/Desktop/progproject$ python mycosGeoHost.py --spp "Cercospora flagellaris" --lim 200
  
 References
 ----------
