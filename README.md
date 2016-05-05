@@ -40,4 +40,4 @@ References
 
 License
 -------
-Please refer to license documentation for matplotlib.
+Please refer to license documentation for matplotlib and databases integrated.
