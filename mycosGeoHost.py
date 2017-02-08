@@ -1,20 +1,3 @@
-#! /usr/bin/env python
-# encoding UTF-8
-
-'''
-Author:  Zac Carver
-project:  mGhost
-copyright:  This program is free software: you can redistribute it and/or modify
-	 		it under the terms of the GNU General Public License as published by
-	 		the Free Software Foundation, either version 3 of the License, or
-			(at your option) any later version.
-			This program is distributed in the hope that it will be useful,
-			but WITHOUT ANY WARRANTY; without even the implied warranty of
-			MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-			GNU General Public License for more details.
-			see <http://www.gnu.org/licenses/>.
-'''
-
 import argparse
 import numpy as np
 import pandas as pd
@@ -73,8 +56,26 @@ def host(spp):
                      params=query
                      ).text
     p = html.fromstring(r)
+    taxa = p.xpath('//p[@class="Hanging "]/text()')
+    #print(taxa)[0]
+    genusSpecies = []
+    for t in taxa:
+        #g = t.split()[0]
+        #s = t.split()[1]
+        if not t.startswith(","):
+            g = t.split()[0]
+            s = t.split()[1]
+            s = s.split(':')[0]
+            hostTaxon = g+" "+s
+            if hostTaxon not in genusSpecies:            
+                genusSpecies.append(g+" "+s)
+    print(genusSpecies)
+    #classp = [e.get('class') for e in p.xpath(p)]
+    ##print(classp.text)
+    #print(r)
+    #print(r)
     link = p.cssselect("A")[30]
-    return link.text_content()
+    #print(link.text_content())
 
 
 def host_geo(h, f, lim):
@@ -141,6 +142,7 @@ def plot(lon, lat, h):
     lonpt, latpt = m(xpt, ypt, inverse=True)
     m.plot(xpt, ypt, 'bo')
     plt.show()
+
 
 
 def main():
